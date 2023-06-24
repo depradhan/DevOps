@@ -1,0 +1,29 @@
+To create a Service Principal and its corresponding credentials (key) in the Azure portal, follow these steps:
+
+1. Sign in to the Azure portal (https://portal.azure.com) using your Azure account credentials.
+
+2. In the Azure portal's search bar at the top, type "Azure Active Directory" and select the "Azure Active Directory" service from the search results.
+
+3. In the Azure Active Directory pane, click on "App registrations" in the left-hand menu.
+
+4. Click on the "New registration" button to create a new application registration.
+
+5. Provide a meaningful name for your application in the "Name" field.
+
+6. Under "Supported account types," select the appropriate option based on your requirements. For most scenarios, "Accounts in this organizational directory only" should suffice.
+
+7. Leave the "Redirect URI" field empty, unless you have a specific requirement.
+
+8. Click on the "Register" button to create the application.
+
+9. Once the application is created, you'll be redirected to the application's overview page. Take note of the "Application (client) ID" value; this is your Service Principal ID.
+
+10. In the left-hand menu, click on "Certificates & secrets."
+
+11. Under the "Client secrets" section, click on the "New client secret" button.
+
+12. Provide a description for the secret in the "Description" field, select the desired expiry duration, and click on the "Add" button.
+
+13. After the client secret is created, copy and securely store the secret value. This value is your Service Principal key. Note that once you leave this page, the secret value will not be visible again, so make sure to copy it.
+
+That's it! You have created a Service Principal ID and key in the Azure portal. Make sure to securely store the Service Principal key as it will be needed to authenticate your application when interacting with Azure resources using the Service Principal.
